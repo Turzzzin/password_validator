@@ -21,7 +21,6 @@ class PasswordRequest(BaseModel):
             raise ValueError("A senha não pode exceder 1000 caracteres")
         return v
 
-
 def validate_password(password: str) -> Dict[str, Any]:
     """
     Validates a password against security rules
